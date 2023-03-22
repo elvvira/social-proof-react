@@ -1,19 +1,14 @@
 import style from './rating.module.scss'
+import { cardRating } from '../../constants/info-cards';
+import CardRating from '../card-rating/CardRating';
 
 const Rating = () =>{
     return <div className={style['rating-container']}>
-        <div className={style.container}>
-            <div className={style.stars}>
-                <img src="/public/images/icon-star.svg" alt="" />
-                <img src="/public/images/icon-star.svg" alt="" />
-                <img src="/public/images/icon-star.svg" alt="" />
-                <img src="/public/images/icon-star.svg" alt="" />
-                <img src="/public/images/icon-star.svg" alt="" />
-            </div>
-            <p className={style.title}>Rated 5 Stars in Reviews</p>
-            </div>
-        {/* <div>caja2</div>
-        <div>caja3</div> */}
+        {cardRating.map(card =>{
+            return <CardRating key={card.id} {...card}></CardRating>
+        })}
+        
+      
     </div>
 }
 export default Rating
