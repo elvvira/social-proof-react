@@ -1,0 +1,44 @@
+.reviews-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.container{
+    width: 100%;
+    height: 248px;
+    background-color: #512051;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    color: white;
+    font-size: 17px;
+    
+}
+.header{
+    display: flex;
+    gap: 1rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    &-information{
+        text-align: left;
+    }
+}
+.subtitle{
+    color:#EE69A4;
+}
+.image{
+    width: 60px;
+    height: 60px;
+    border-radius: 4rem;
+
+}
+.review{
+    text-align: left;
+    width: 85%;
+    margin-right: auto;margin-left: auto;
+}
+p{
+    margin: 5px;
+}
